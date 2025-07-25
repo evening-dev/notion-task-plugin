@@ -1,7 +1,9 @@
-openapi: 3.0.1
+openapi: 3.1.0
 info:
   title: Notion Task API
   version: "1.0.0"
+servers:
+  - url: https://notion-task-api.<your-subdomain>.workers.dev
 paths:
   /:
     get:
@@ -14,6 +16,4 @@ paths:
             application/json:
               schema:
                 type: object
-servers:
-  - url: https://notion-task-api.even-raining.workers.dev
-  
+                additionalProperties: true
