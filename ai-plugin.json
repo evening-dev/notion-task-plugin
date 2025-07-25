@@ -1,0 +1,17 @@
+{
+  "schema_version": "v1",
+  "name_for_model": "notion_task_viewer",
+  "name_for_human": "Notion Task Viewer",
+  "description_for_model": "Get tasks from a Notion database via a custom API",
+  "description_for_human": "View and filter your Notion task list",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://notion-task-api.abc123.workers.dev/openapi.yaml"
+  },
+  "logo_url": "https://raw.githubusercontent.com/favicon.ico",
+  "contact_email": "you@example.com",
+  "legal_info_url": "https://example.com/legal"
+}
