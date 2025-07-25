@@ -2,8 +2,6 @@ openapi: 3.1.0
 info:
   title: Notion Task API
   version: "1.0.0"
-servers:
-  - url: https://notion-task-api.<your-subdomain>.workers.dev
 paths:
   /:
     get:
@@ -16,4 +14,14 @@ paths:
             application/json:
               schema:
                 type: object
-                additionalProperties: true
+                properties:
+                  results:
+                    type: array
+                    description: Notion API の `results` 配列
+                    items:
+                      type: object
+                      description: Notion のデータベースアイテムのオブジェクト
+                required:
+                  - results
+servers:
+  - url: https://notion-task-api.even-raining.workers.dev
